@@ -52,18 +52,19 @@
 ### you can download apk file and test the app from this direct link :
 **[Download Math World App for Android](https://www.mediafire.com/file/k6mhczx9xvwqb9e/MathWorld.apk/file).**
 
-#Contact With Developer
-### you can contact me via :
-**-[FaceBook](https://www.facebook.com/abdalrahman.khaled.54/).**
+# Contact With Developer
+**you can contact me via :**
 
-**-[Gmail](bodyono3@gmail.com).**
+**-[FaceBook](https://www.facebook.com/abdalrahman.khaled.54/).**
 
 **-[WhatsApp](https://wa.me/201148472090).**
 
 **-[LinkedIn](https://www.linkedin.com/in/abdulrhman-khaled-91a3b821a).**
 
-**-[InstaGram](https://www.instagram.com/bodykh_/).**
+**-[Instagram](https://www.instagram.com/bodykh_/).**
 
-**-[TeleGram](https://t.me/Bodykh1).**
+**-[Telegram](https://t.me/Bodykh1).**
 
-## 
+# CopyRight
+### Developed ans Designed by **BodyKH** (Abdulrhman Khaled Hassan Zaki) Suez,Egypt 2020-2021.
+## Thank You! 
