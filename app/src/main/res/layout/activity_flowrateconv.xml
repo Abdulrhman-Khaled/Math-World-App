@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".flowrateconv">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Barrels Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Barrels/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/bs1"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Barrels/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/bm2"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Barrels/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/bh3"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Barrels/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/bd4"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Gallons Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Gallons/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/gs5"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Gallons/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/gm6"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Gallons/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/gh7"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Gallons/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/gd8"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Liters Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Liters/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/ls9"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Liters/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/lm10"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Liters/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/lh11"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Liters/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/ld12"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Cubic Meters Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Meters/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cms13"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Meters/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cmm14"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Meters/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cmh15"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Meters/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cmd16"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Cubic Feet Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Feet/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cfs17"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Feet/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cfm18"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Feet/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cfh19"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Feet/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cfd20"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Cubic Inches Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Inches/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cis21"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Inches/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cim22"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Inches/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cih23"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Cubic Inches/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/cid24"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15px"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:text=" Acre Feet Flow Rate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Acre Feet/s"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/afs25"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Acre Feet/m"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/afm26"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Acre Feet/h"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/afh27"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/amaranth_bold"
+                            android:gravity="center"
+                            android:text="Acre Feet/d"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/afd28"
+                            android:layout_width="160dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittextstyle"
+                            android:cursorVisible="true"
+                            android:digits="0123456789-."
+                            android:fontFamily="@font/amaranth_bold"
+                            android:hint="0000.0000"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/dark_header"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="31dp" />
+                        >
+                    </LinearLayout>
+                    >
+                </LinearLayout>
+            </LinearLayout>
+            >
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

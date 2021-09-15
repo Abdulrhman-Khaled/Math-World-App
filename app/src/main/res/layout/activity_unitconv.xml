@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".unitconv">
+
+    <io.github.florent37.shapeofview.shapes.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:shape_arc_height="55dp"
+        app:shape_arc_position="bottom">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="Choose The Measurement"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="45sp"></TextView>
+    </FrameLayout>
+    </io.github.florent37.shapeofview.shapes.ArcView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingRight="40dp">
+
+
+
+            <Button
+                android:id="@+id/vb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle2"
+                android:drawableStart="@drawable/ic_volume"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:gravity="left|center_vertical"
+                android:onClick="volume_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="   Volume"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/ab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle"
+                android:drawableStart="@drawable/ic_area"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:gravity="left|center_vertical"
+                android:onClick="area_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="   Area"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/lb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle2"
+                android:drawableStart="@drawable/ic_length"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:gravity="left|center_vertical"
+                android:onClick="length_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="   Length"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/pb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle"
+                android:drawableStart="@drawable/ic_preasuer"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:gravity="left|center_vertical"
+                android:onClick="pressure_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="   Pressure"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle2"
+                android:drawableStart="@drawable/ic_temp"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:gravity="left|center_vertical"
+                android:onClick="temperature_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="   Temperature"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/frb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle"
+                android:drawableStart="@drawable/ic_flowrate"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:gravity="left|center_vertical"
+                android:onClick="flowrate_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="   Flow Rate"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

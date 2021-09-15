@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".temperatureconv">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:fontFamily="@font/amaranth_bold"
+                android:text=" Celsius"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/celid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="29px"
+                android:background="@drawable/edittextstyle"
+                android:cursorVisible="true"
+                android:digits="0123456789-."
+                android:fontFamily="@font/amaranth_bold"
+                android:hint="0000.0000"
+                android:inputType="numberSigned|numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/dark_header"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:fontFamily="@font/amaranth_bold"
+                android:text=" Fahrenheit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/fahid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="29px"
+                android:background="@drawable/edittextstyle"
+                android:cursorVisible="true"
+                android:digits="0123456789-."
+                android:fontFamily="@font/amaranth_bold"
+                android:hint="0000.0000"
+                android:inputType="numberSigned|numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/dark_header"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:fontFamily="@font/amaranth_bold"
+                android:text=" Kelvin"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/kelid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="29px"
+                android:background="@drawable/edittextstyle"
+                android:cursorVisible="true"
+                android:digits="0123456789-."
+                android:fontFamily="@font/amaranth_bold"
+                android:hint="0000.0000"
+                android:inputType="numberSigned|numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/dark_header"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:fontFamily="@font/amaranth_bold"
+                android:text=" Rankine"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ranid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="29px"
+                android:background="@drawable/edittextstyle"
+                android:cursorVisible="true"
+                android:digits="0123456789-."
+                android:fontFamily="@font/amaranth_bold"
+                android:hint="0000.0000"
+                android:inputType="numberSigned|numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/dark_header"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

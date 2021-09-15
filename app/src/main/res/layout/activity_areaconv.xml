@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".areaconv"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Acre"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/acid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Hectare"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/heid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Centimeter"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/scmid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Meter"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/smid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Kilometer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/skmid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Feet"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/sfid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Inch"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/sinid"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Mile"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/smiid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=" Square Yard"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/syid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-."
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="0000.0000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

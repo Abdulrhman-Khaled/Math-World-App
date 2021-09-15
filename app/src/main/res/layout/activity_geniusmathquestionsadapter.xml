@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".geniusmathquestionsadapter">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="Answer The Following Question"
+            android:gravity="center"
+            android:textColor="@color/colorB"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/qusimg"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:padding="1dp"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="\tEnter Your Solution:"
+            android:gravity="center"
+            android:textColor="@color/colorB"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/quissoul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29px"
+            android:background="@drawable/edittextstyle"
+            android:cursorVisible="true"
+            android:digits="0123456789-"
+            android:fontFamily="@font/amaranth_bold"
+            android:hint="00000000000000"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:shadowColor="#000000"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textCursorDrawable="@drawable/dark_header"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/chans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/newbutstyle2"
+            android:fontFamily="@font/amaranth_bold"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:shadowColor="#BABABA"
+            android:text="Check Answer"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"></Button>
+
+        <TextView
+            android:id="@+id/torftxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="Your Answer = ?"
+            android:textColor="@color/colorB"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/torftxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="The Correct Answer = ?"
+            android:textColor="@color/colorB"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/solsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorB"
+            android:textSize="15sp"></TextView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

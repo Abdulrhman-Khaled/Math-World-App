@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".homepage">
+
+    <io.github.florent37.shapeofview.shapes.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:shape_arc_height="55dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="70dp"
+                android:fontFamily="@font/amaranth_bold"
+                android:text="Choose\nSection"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="45sp"></TextView>
+
+        </FrameLayout>
+    </io.github.florent37.shapeofview.shapes.ArcView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingRight="40dp">
+
+            <Button
+                android:id="@+id/calcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle2"
+                android:drawableStart="@drawable/ic_calculator"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:onClick="calculator_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="Scientific\n Calculator"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/ucb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle"
+                android:drawableStart="@drawable/ic_change"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:onClick="unitconv_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="Units\n Converter"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/vb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle2"
+                android:drawableStart="@drawable/ic_math"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:onClick="mlaws_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="Mathematics\n Laws"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/lawb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/newbutstyle"
+                android:drawableStart="@drawable/ic_maths_svgrepo_com"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:fontFamily="@font/amaranth_bold"
+                android:onClick="gmq_but"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:shadowColor="#BABABA"
+                android:text="Genius Math\n Questions"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

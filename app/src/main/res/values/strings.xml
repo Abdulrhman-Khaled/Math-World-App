@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Math World</string>
+    <string name="trueem">&#9989;</string>
+    <string name="falseem">&#10060;</string>
+</resources>

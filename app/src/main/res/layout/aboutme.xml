@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/imgborder"
+    android:padding="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:gravity="center"
+        android:text="Developed and Designed by BodyKh©"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/bkbl"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:gravity="center"
+        android:text="Contact me by clicking on any of the following"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="facebookbut"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_facebook"></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="whatsappbut"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_whatsapp"></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="instagrambut"
+            android:background="@drawable/ic_instagram"></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="linkedinbut"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_linkedin"></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callbut"
+            android:background="@drawable/ic_phone_call"></ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>

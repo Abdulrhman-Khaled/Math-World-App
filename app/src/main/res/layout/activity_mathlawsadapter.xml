@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".mathlawsadapter">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/amaranth_bold"
+            android:gravity="center"
+            android:text="Note: You can Zoom in/out The Image!"
+            android:textColor="@color/colorB"
+            android:textSize="20sp"></TextView>
+
+        <com.ortiz.touchview.TouchImageView
+            android:id="@+id/lawview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:cropToPadding="true"
+            ></com.ortiz.touchview.TouchImageView>
+
+
+</LinearLayout>
