@@ -10,7 +10,8 @@
 - NetBeans IDE.
 ### Logo and Icons :
 - Adobe Photoshop 2021.
-- Adobe XD (ux/ui) 2021.
+- Adobe Illustrator 2020.
+- Adobe XD (ux/ui).
 # App Sections
 ### 1-Splash Screen
 **It's a boot screen contain app's name, logo and developer logo and it lasts for two seconds and then disappears and takes us to home page.**
